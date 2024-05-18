@@ -1,4 +1,4 @@
-package Module1.Level18.Tasks;
+package Module1.Level18.Tasks.TaskMyQueue;
 
 import java.util.Queue;
 
