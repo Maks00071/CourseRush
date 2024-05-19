@@ -9,6 +9,7 @@ public class GameObject {
     public int y;
     public boolean isMine; //является ли ячейка миной
     public int countMineNeighbors; //количество "заминированных" соседей ячейки
+    public boolean isOpen;
 
     /**
      * Конструктор

@@ -46,11 +46,17 @@ public class MinesweeperGame extends Game{
     private static final int SIDE = 9;
     private final GameObject[][] gameField = new GameObject[SIDE][SIDE];
     private int countMinesOnField;
+    private static final String MINE = "\uDCA3"; //символ мины
 
     @Override
     public void initialize() {
         setScreenSize(SIDE, SIDE);
         createGame();
+    }
+
+    @Override
+    public void onMouseLeftClick(int x, int y) {
+        openTile(x, y);
     }
 
     private void createGame() {
@@ -68,11 +74,11 @@ public class MinesweeperGame extends Game{
         countMineNeighbors();
     }
 
+    /***
+     Метод проверяет все объекты игрового поля gameField на наличие мин.
+     Если в ячейке находится мина, то кладем объект в массив
+     ***/
     private List<GameObject> getNeighbors(GameObject gameObject) {
-        /***
-         Метод проверяет все объекты игрового поля gameField на наличие мин.
-         Если в ячейке находится мина, то кладем объект в массив
-         ***/
         List<GameObject> result = new ArrayList<>();
         for (int y = gameObject.y - 1; y <= gameObject.y + 1; y++) {
             for (int x = gameObject.x - 1; x <= gameObject.x + 1; x++) {
@@ -91,12 +97,13 @@ public class MinesweeperGame extends Game{
         return result;
     }
 
+    /**
+     Считаем кол-во примыкающих ячеек с минами
+     Метод проверяет каждую ячейку "gameField" на наличие мины. Если мины нет, то
+     значит мы считаем кол-во примыкающих ячеек с минами. Кол-во записываем в
+     переменную объекта "countMineNeighbors"
+     */
     private void countMineNeighbors() {
-        /***считаем кол-во примыкающих ячеек с минами
-         Метод проверяет каждую ячейку "gameField" на наличие мины. Если мины нет, то
-         значит мы считаем кол-во примыкающих ячеек с минами. Кол-во записываем в
-         переменную объекта "countMineNeighbors"
-         ***/
         for (int y = 0; y < SIDE; y++) {
             for (int x = 0; x < SIDE; x++) {
                 GameObject gameObject = gameField[y][x];
@@ -109,6 +116,24 @@ public class MinesweeperGame extends Game{
                 }
             }
         }
+    }
+
+    /**
+     * Если в ячейке есть мина (isMine == true), то
+     * метод отрисовывает в ячейке символ мины.
+     * Иначе - метод отрисовывает количество примыкающих ячеек-мин
+     * @param x - координата x
+     * @param y - координата y
+     */
+    private void openTile(int x, int y) {
+        GameObject gameObject = gameField[y][x];
+        if (gameObject.isMine) {
+            setCellValue(gameObject.x, gameObject.y, MINE);
+        } else {
+            setCellNumber(x, y, gameObject.countMineNeighbors);
+        }
+        gameObject.isOpen = true;
+        setCellColor(x, y, Color.GREEN);
     }
 }
 
