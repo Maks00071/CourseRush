@@ -1,9 +1,12 @@
 package Module1.Level21.Tasks.TaskHuman;
 
+import java.util.ArrayList;
+
 /******Собственное исключение*******
 В методе getChildrenCount(Human) возникает NPE (NullPointerException), оно малоинформативное.
 
-Создай исключение ChildrenNotInitializedException в отдельном классе, унаследуй его от RuntimeException.
+Создай исключение ChildrenNotInitializedException в отдельном классе,
+ унаследуй его от RuntimeException.
  Также создай конструктор в этом классе с параметром типа String.
  Пусть конструктор выводит свой параметр на экран.
 
@@ -22,6 +25,31 @@ package Module1.Level21.Tasks.TaskHuman;
 
 public class Human {
 
+    private String name;
+    private int age;
+    private ArrayList<Human> children;
+
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Human(String name, int age, ArrayList<Human> children) {
+        this(name, age);
+        this.children = children;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public ArrayList<Human> getChildren() {
+        return children;
+    }
 }
 
 
