@@ -1,4 +1,4 @@
-package Module1.Level18.MyGameMinesweeper;
+package MyGames.MyGameMinesweeper;
 
 //import com.javarush.engine.cell.*;
 //

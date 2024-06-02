@@ -1,4 +1,4 @@
-package Module1.Level18.MyGameMinesweeper;
+package MyGames.MyGameMinesweeper;
 
 ///**
 // * Так как в нашей игре будут использоваться игровые объекты (ячейки), создадим для их

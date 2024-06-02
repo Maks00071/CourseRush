@@ -1,4 +1,4 @@
-package Module1.Level18.TheGame2048;
+package MyGames.TheGame2048;
 
 //import com.javarush.engine.cell.*;
 //
