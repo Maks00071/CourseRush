@@ -20,10 +20,30 @@ public class FileManager {
     /**
      * Метод имитирует считывание содержимого файла
      * @param filePath - путь к файлу
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException - исключение
      */
     private void readFile(String filePath) throws FileNotFoundException {
         System.out.println("Читаем содержимое файла " + filePath);
+    }
+
+    /**
+     * Метод имитирует запись данных в файл
+     * @param filePath - путь к файлу
+     * @throws FileNotFoundException - исключение
+     */
+    private void writeFile(String filePath) throws FileNotFoundException {
+        System.out.println("Записываем данные в файл " + filePath);
+    }
+
+    public void copyFile(String sourceFile, String destinationFile) {
+        try {
+            readFile(sourceFile);
+            writeFile(destinationFile);
+        } catch(FileNotFoundException e) {
+            throw new RuntimeException(e);}
+//        } catch(FileSystemException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 }
 
