@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
 
-/**
+/***** байты в символы *****
  * Создай публичный статический метод bytesToChars(ByteArrayInputStream stream, int n),
  * возвращающий char[].
  * Метод должен считать n первых байт из stream, и преобразовать их в массив символов.
