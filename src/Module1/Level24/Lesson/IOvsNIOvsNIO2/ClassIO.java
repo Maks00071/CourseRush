@@ -5,7 +5,7 @@ import java.io.*;
 
 /**
  * Напишем код, который будет копировать наш файл из одной папки в другую.
- * Проверим его работу на маленьком и большом файлах.
+ * Проверим его работу на маленьком (до 10 Мб) и большом (видео) файлах.
  */
 
 public class ClassIO {
@@ -18,7 +18,7 @@ public class ClassIO {
         copyFileByIO(src, dst);
         //время останова
         currentMills = System.currentTimeMillis();
-        System.out.println("Время выполнения в миллисекундах: " + (currentMills - startMills)); //=> Время выполнения в миллисекундах: 9
+        System.out.println("Время выполнения в миллисекундах: " + (currentMills - startMills)); //=> Время выполнения в миллисекундах: 1
     }
 
     /**
