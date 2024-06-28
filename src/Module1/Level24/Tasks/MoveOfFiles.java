@@ -26,6 +26,7 @@ public class MoveOfFiles {
 
         try (DirectoryStream<Path> files = Files.newDirectoryStream(sourceDirectory)) {
             for (Path path : files) {
+                //если в конце пути стоит файл
                 if (Files.isRegularFile(path)) {
                     Path resolve = targetDirectory.resolve(path.getFileName());
                     Files.move(path, resolve);
