@@ -12,7 +12,7 @@ import java.nio.file.Paths;
  * • Метод main должен использовать метод Paths.get() с одним параметром типа URI для создания объекта Path.
  */
 
-public class ClassPath1 {
+public class ClassPaths1 {
     public static Path rpmLogPath;
 
     public static void main(String[] args) throws Exception {
