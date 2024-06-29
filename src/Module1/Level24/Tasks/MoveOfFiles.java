@@ -21,8 +21,8 @@ import java.nio.file.DirectoryStream;
 public class MoveOfFiles {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        Path sourceDirectory = Path.of(scanner.nextLine());
-        Path targetDirectory = Path.of(scanner.nextLine());
+        Path sourceDirectory = Path.of(scanner.nextLine());  //"c:\\windows\\users\\test.txt"
+        Path targetDirectory = Path.of(scanner.nextLine());  //"c:\\windows\\users\\myFolder\\"
 
         try (DirectoryStream<Path> files = Files.newDirectoryStream(sourceDirectory)) {
             for (Path path : files) {
