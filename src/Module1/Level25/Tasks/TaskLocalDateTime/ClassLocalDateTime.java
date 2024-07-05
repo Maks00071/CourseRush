@@ -5,7 +5,7 @@ import java.time.LocalTime;
 import java.time.LocalDateTime;
 import java.util.*;
 
-/**
+/***** Синтезируем LocalDateTime *****
  * В методе convert нужно преобразовать Map в Set.
  * Принцип преобразования:
  * -----
