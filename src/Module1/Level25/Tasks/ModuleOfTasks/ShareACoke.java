@@ -1,4 +1,4 @@
-package Module1.Level25.Tasks;
+package Module1.Level25.Tasks.ModuleOfTasks;
 
 import java.util.Scanner;
 
