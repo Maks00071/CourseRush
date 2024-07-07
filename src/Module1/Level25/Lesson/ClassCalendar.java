@@ -16,7 +16,7 @@ public class ClassCalendar {
         int minute = calendar.get(Calendar.MINUTE);
         int second = calendar.get(Calendar.SECOND);
 
-        System.out.println(era);
+        System.out.println("era = " + era);
         System.out.println(year);
         System.out.println(month);
         System.out.println(day);
