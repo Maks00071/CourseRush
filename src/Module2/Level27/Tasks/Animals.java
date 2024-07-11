@@ -1,7 +1,5 @@
 package Module2.Level27.Tasks;
 
-import java.util.Objects;
-
 /***** Определимся с животным *****
  * Напиши метод, который определяет, объект какого класса ему передали, и возвращает результат:
  * одно из значений — «Корова», «Кит», «Собака», «Неизвестное животное».
@@ -25,7 +23,7 @@ public class Animals {
         System.out.println(getObjectType(new Pig()));
     }
 
-    public static String getObjectType(Objects o) {
+    public static String getObjectType(Object o) {
         if (o instanceof Cow) {
             return "Корова";
         }
