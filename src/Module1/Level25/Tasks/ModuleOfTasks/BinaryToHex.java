@@ -60,18 +60,18 @@ public class BinaryToHex {
      * @param binaryNumber - строковое представление двоичного числа
      * @return - строковое представление шестнадцатеричного числа
      */
-    public static String toHex(String binaryNumber) {
-        String hexNumber = "";
-
-        if (binaryNumber == null) {
-            return hexNumber;
-        }
-        StringBuilder stringBuilder = new StringBuilder(binaryNumber);
-
-        if (binaryNumber.length() % 4 != 0) {
-
-        }
-    }
+//    public static String toHex(String binaryNumber) {
+//        String hexNumber = "";
+//
+//        if (binaryNumber == null) {
+//            return hexNumber;
+//        }
+//        StringBuilder stringBuilder = new StringBuilder(binaryNumber);
+//
+////        if (binaryNumber.length() % 4 != 0) {
+////
+////        }
+//    }
 
     /**
      * Метод переводит строкового представления шестнадцатеричного
@@ -79,9 +79,9 @@ public class BinaryToHex {
      * @param hexNumber - строкового представления шестнадцатеричного числа
      * @return - строковое представление двоичного числа
      */
-    public static String toBinary(String hexNumber) {
-
-    }
+//    public static String toBinary(String hexNumber) {
+//
+//    }
 }
 
 
