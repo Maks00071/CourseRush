@@ -2,11 +2,10 @@ package Module2.Level28.Tasks.AuthorAndArticle;
 
 public class Author {
     private final String name;
-    private final Article article;
+    private Article article;
 
-    public Author(String name, String title, String text) {
+    public Author(String name) {
         this.name = name;
-        this.article = new Article();
     }
 
     public String getName() {
@@ -15,5 +14,9 @@ public class Author {
 
     public Article getArticle() {
         return article;
+    }
+
+    public void setArticle(Article article) {
+        this.article = article;
     }
 }
