@@ -45,6 +45,16 @@ public abstract class User {
         System.out.println(name + " " + password);
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
+    }
 }
 
 

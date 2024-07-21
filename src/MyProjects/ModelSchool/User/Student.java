@@ -24,7 +24,7 @@ public class Student extends User {
     }
 
     // переопределим второй конструктор родителя
-    public Student(String name, String password, List<Group> groups) {
+    public Student(String name, String password) {
         super(name, password);
         this.groups = new ArrayList<>();
     }
@@ -33,6 +33,17 @@ public class Student extends User {
     public Student(String name, String password, LocalDate dateOfBirth, List<Group> groups) {
         super(name, password, dateOfBirth);
         this.groups = groups;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "groups=" + groups +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
     }
 }
 

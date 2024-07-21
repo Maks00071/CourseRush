@@ -24,6 +24,21 @@ public class School {
         this.teachers = new ArrayList<>();
         this.students = new ArrayList<>();
     }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "name='" + name + '\'' +
+                ", groups=" + groups +
+                ", admins=" + admins +
+                ", teachers=" + teachers +
+                ", students=" + students +
+                '}';
+    }
 }
 
 

@@ -1,6 +1,7 @@
 package MyProjects.ModelSchool.User;
 
 import MyProjects.ModelSchool.Group;
+import MyProjects.ModelSchool.Lesson;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -33,6 +34,29 @@ public class Teacher extends User {
         super(name, password, dateOfBirth);
         this.expertise = expertise;
         this.groups = groups;
+    }
+
+    /**
+     * Метод создает объект лекция
+     * @param topic - название лекции
+     * @param materials - материал лекции
+     * @param students - список студентов
+     * @return - новый объект Lesson
+     */
+    public Lesson createLesson(String topic, String materials, List<Student> students) {
+        return new Lesson(this, topic, materials, students);
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "expertise='" + expertise + '\'' +
+                ", groups=" + groups +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
     }
 }
 

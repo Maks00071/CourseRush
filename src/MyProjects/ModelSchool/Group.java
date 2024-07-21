@@ -18,12 +18,39 @@ public class Group {
     List<Lesson> lessons; // список лекций группы
 
     // реализуем конструктор
-    public Group(String name, Teacher teacher) {
+    public Group(String name, Teacher teacher, List<Student> students) {
         this.id = counter++;
         this.name = name;
         this.teacher = teacher;
-        this. students = new ArrayList<>();
+        this. students = students;
         this.lessons = new ArrayList<>();
+    }
+
+    /**
+     * Геттер - возвращает список студентов
+     * @return - список студентов
+     */
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    /**
+     * Геттер - возвращает список лекций
+     * @return - список лекций
+     */
+    public List<Lesson> getLessons() {
+        return lessons;
+    }
+
+    @Override
+    public String toString() {
+        return "Group{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", teacher=" + teacher +
+                ", students=" + students +
+                ", lessons=" + lessons +
+                '}';
     }
 }
 
