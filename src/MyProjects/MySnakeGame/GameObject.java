@@ -1,4 +1,4 @@
-package MyGames.MySnakeGame;
+package MyProjects.MySnakeGame;
 
 public class GameObject {
     public int x;

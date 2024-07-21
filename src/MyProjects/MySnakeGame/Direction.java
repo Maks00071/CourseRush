@@ -1,4 +1,4 @@
-package MyGames.MySnakeGame;
+package MyProjects.MySnakeGame;
 
 /**
  * Змейка может двигаться в одном из четырех направлений.

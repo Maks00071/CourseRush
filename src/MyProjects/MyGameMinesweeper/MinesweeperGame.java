@@ -1,4 +1,4 @@
-package MyGames.MyGameMinesweeper;
+package MyProjects.MyGameMinesweeper;
 
 //import com.javarush.engine.cell.*;
 //

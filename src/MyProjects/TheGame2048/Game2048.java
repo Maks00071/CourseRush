@@ -1,4 +1,4 @@
-package MyGames.TheGame2048;
+package MyProjects.TheGame2048;
 
 //import com.javarush.engine.cell.*;
 //

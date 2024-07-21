@@ -1,4 +1,4 @@
-package MyGames.MyGameMinesweeper;
+package MyProjects.MyGameMinesweeper;
 
 ///**
 // * Так как в нашей игре будут использоваться игровые объекты (ячейки), создадим для их

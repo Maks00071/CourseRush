@@ -1,4 +1,4 @@
-package MyGames.MySnakeGame;
+package MyProjects.MySnakeGame;
 
 //import com.javarush.engine.cell.*;
 //
