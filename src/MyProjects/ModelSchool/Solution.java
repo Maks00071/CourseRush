@@ -40,6 +40,7 @@ public class Solution {
         Lesson today = pavel.createLesson("OOP", "lecture", oscar.getStudents());
         // добавим лекцию в список
         oscar.getLessons().add(today);
+        System.out.println(j_r);
     }
 }
 
