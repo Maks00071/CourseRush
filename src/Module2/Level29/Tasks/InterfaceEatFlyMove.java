@@ -15,7 +15,7 @@ package Module2.Level29.Tasks;
  * • Утка должна уметь передвигаться, летать и есть.
  */
 
-public class InterfaceSolution {
+public class InterfaceEatFlyMove {
 
     public static void main(String[] args) {
         Dog dog = new Dog();
