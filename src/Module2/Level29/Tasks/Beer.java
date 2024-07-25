@@ -14,7 +14,7 @@ package Module2.Level29.Tasks;
  * • Метод isReadyToGoHome должен возвращать значение переменной READY_TO_GO_HOME.
  */
 
-public interface Beer {
+public class Beer {
     public static void main(String[] args) throws Exception {
 
     }
