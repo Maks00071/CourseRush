@@ -7,5 +7,11 @@ public class EmployeeTest {
 
         System.out.println(employee1.toString());
         System.out.println(employee2.toString());
+        System.out.println("Увеличим работникам зарплату в 2 раза!");
+        employee1.increaseSalary();
+        employee2.increaseSalary();
+        System.out.println(employee1.toString());
+        System.out.println(employee2.toString());
+
     }
 }
