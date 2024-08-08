@@ -3,7 +3,7 @@ package StepikJava.ZaurJava.Lessons;
 public class MethodOverloading {
 
     public void show(int i) {
-        System.out.println("This is an integer = " + i);
+        System.out.println("This is an Integer = " + i);
     }
 
     public void show(boolean b) {
