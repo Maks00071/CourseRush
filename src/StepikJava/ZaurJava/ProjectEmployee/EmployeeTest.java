@@ -1,5 +1,9 @@
 package StepikJava.ZaurJava.ProjectEmployee;
 
+import StepikJava.ZaurJava.ProjectBankAccount.BankAccount;
+
+import StepikJava.ZaurJava.ProjectBankAccount.BankAccount;
+
 public class EmployeeTest {
     public static void main(String[] args) {
         Employee employee1 = new Employee(1, "Petr Petrov", 35, 2588.56);
@@ -13,5 +17,9 @@ public class EmployeeTest {
         System.out.println(employee1.toString());
         System.out.println(employee2.toString());
 
+        BankAccount bankAccount = new BankAccount(3, "Maks", "Korystov");
+        bankAccount.setBalance(6568.45);
+        System.out.println("The Balance of " + bankAccount.getFirstName() + " " +
+                bankAccount.getLastName() + " = $" + bankAccount.getBalance());
     }
 }
