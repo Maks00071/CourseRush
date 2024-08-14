@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lessons;
+package StepikJava.ZaurJava.Lessons10;
 
 public class MethodOverloading2 {
 

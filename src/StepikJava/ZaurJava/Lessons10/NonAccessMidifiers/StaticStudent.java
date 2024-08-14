@@ -1,6 +1,4 @@
-package StepikJava.ZaurJava.Lessons.NonAccessMidifiers;
-
-import Tasks.TaskStudents.Student;
+package StepikJava.ZaurJava.Lessons10.NonAccessMidifiers;
 
 public class StaticStudent {
     public String name;
