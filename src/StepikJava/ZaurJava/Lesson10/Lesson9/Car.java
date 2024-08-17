@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lessons10.Lesson9;
+package StepikJava.ZaurJava.Lesson10.Lesson9;
 
 public class Car {
     private String color;

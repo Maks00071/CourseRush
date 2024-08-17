@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lessons10.TaskMultiTwoNumber;
+package StepikJava.ZaurJava.Lesson10.TaskMultiTwoNumber;
 
 public class OneClass {
 
