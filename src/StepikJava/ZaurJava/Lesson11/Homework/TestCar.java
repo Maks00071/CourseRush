@@ -30,7 +30,12 @@ public class TestCar {
         System.out.println("The car1: " + car1.toString());
         System.out.println("The car2: " + car2.toString());
 
+        System.out.println("The cars changed!");
 
+        changeCountDoors(car1, 5);
+        changeColors(car2, car1);
 
+        System.out.println("The car1: " + car1.toString());
+        System.out.println("The car2: " + car2.toString());
     }
 }
