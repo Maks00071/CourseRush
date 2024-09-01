@@ -9,13 +9,20 @@ public class Email {
     }
 
     public static void main(String[] args) {
-        // "ya@yahoo.com;" --> "yahoo"
-        // "on@mail.ru;"   --> "mail"
-        // "ona@gmail.com" --> "gmail"
+        // "ya@yahoo.com;     on@mail.ru;        ona@gmail.com;"
 
         Scanner scanner = new Scanner(System.in);
         String emailInput = scanner.nextLine();
-        String newEmail = Email.checkEmail(emailInput);
-        System.out.println(newEmail);
+
+        int beginInd = 0;
+
+        for (int i = 0; i < emailInput.length(); i++) {
+            if (emailInput.charAt(i) == ';') {
+                int endInd = i;
+                System.out.println(Email.checkEmail(emailInput.substring(beginInd, endInd)));
+                beginInd = endInd;
+            }
+        }
+
     }
 }
