@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lesson10.Lesson9.P1.P2;
+package StepikJava.ZaurJava.Lesson9.P1.P2;
 
 public class ClassB {
 
