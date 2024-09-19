@@ -18,8 +18,8 @@ public class ClassArrayList {
 
         // с ограничителями типов данных ArrayList
         ArrayList<String> list2 = new ArrayList<>();
-
         ArrayList<StringBuilder> list3 = new ArrayList<>();
+        ArrayList<String> list4 = new ArrayList<>(55);
 
 
     }
