@@ -11,5 +11,8 @@ public class HumanTest {
 
         System.out.println(human1.toString());
         System.out.println(human2.toString());
+
+        Student student1 = new Student("male", "Nick", 23, 57);
+        System.out.println(student1.toString());
     }
 }
