@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lesson25.Homework.Student;
+package StepikJava.ZaurJava.Lesson25.Homework.StudentHW;
 
 public class Student {
     private StringBuilder name;
@@ -17,8 +17,8 @@ public class Student {
     }
 
 
-    public StringBuilder getName() {
-        return name;
+    public String getName() {
+        return String.valueOf(name);
     }
 
     public void setName(StringBuilder name) {
