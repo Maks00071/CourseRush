@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lesson25.Homework;
+package StepikJava.ZaurJava.Lesson25.Homework.Student;
 
 public class TestStudent {
     public static void main(String[] args) {
