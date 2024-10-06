@@ -1,8 +1,12 @@
 package StepikJava.ZaurJava.Lesson27.AbstractClass;
 
-abstract class Figura {
+abstract class Figure {
 
     int countSide;
+
+//    Figure(int countSide) {
+//        this.countSide = countSide;
+//    }
 
     abstract void square();
     abstract void perimeter();
