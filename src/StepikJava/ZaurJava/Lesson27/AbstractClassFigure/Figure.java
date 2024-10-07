@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lesson27.AbstractClass;
+package StepikJava.ZaurJava.Lesson27.AbstractClassFigure;
 
 abstract class Figure {
 
