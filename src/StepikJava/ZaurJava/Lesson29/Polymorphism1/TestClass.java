@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lesson29.Polymorphism;
+package StepikJava.ZaurJava.Lesson29.Polymorphism1;
 
 public class TestClass {
     public static void main(String[] args) {
