@@ -41,7 +41,9 @@ public class GreenwichMeanTime {
         // текущее кол-во часов по Гринвичу
         currentHour = totalHours % HOURS_PER_DAY;
 
-
+        // текущее время по Гринвичу
+        System.out.println("Текущее время по Гринвичу: " + currentHour + ":" + currentMinute + ":"
+                + currentSecond + "GMT.");
     }
 }
 
