@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TaxiCost {
     public static void main(String[] args) {
-        final double price = 8.5;
+        final double PRICE = 8.5;
 
         int initialValue; // начальное значение одометра
         int finalValue; // конечное значение одометра
@@ -22,7 +22,7 @@ public class TaxiCost {
         distance = finalValue - initialValue;
 
         System.out.println("Вы проехали " + distance + " км.");
-        System.out.println("Из расчета 8 руб 50 коп за 1 км, стоимость проезда равна " + (int) (distance * price)
-                + " руб " + (int)((distance * price - (int) (distance * price)) * 100) + " коп");
+        System.out.println("Из расчета 8 руб 50 коп за 1 км, стоимость проезда равна " + (int) (distance * PRICE)
+                + " руб " + (int)((distance * PRICE - (int) (distance * PRICE)) * 100) + " коп");
     }
 }
