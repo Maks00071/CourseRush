@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Lesson31.Exeptions;
+package StepikJava.ZaurJava.Lesson31.OtherTasks;
 
 import java.util.Scanner;
 
