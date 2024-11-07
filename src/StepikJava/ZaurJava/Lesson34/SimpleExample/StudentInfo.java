@@ -74,6 +74,13 @@ public class StudentInfo {
         }
     }
 
+    public void testStudents(ArrayList<Student> studentList, StudentCheck sc) {
+        for (Student st : studentList) {
+            if (sc.test(st)) {
+                printStudentInfo3(st);
+            }
+        }
+    }
 
 
 }

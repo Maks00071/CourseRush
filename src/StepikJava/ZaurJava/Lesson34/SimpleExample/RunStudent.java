@@ -22,6 +22,36 @@ public class RunStudent {
 
         info.printStudentInfo1(st1);
         System.out.println("-----------------------------------------------------------------");
-        info.printStudentsOverGrade(studentList, 8);
+
+        info.printStudentsOverGrade(studentList, 5.1);
+        System.out.println("-----------------------------------------------------------------");
+        info.testStudents(studentList, (Student st) -> st.getAvgGrade() > 8);
+        System.out.println("-----------------------------------------------------------------");
+        info.testStudents(studentList, (Student st) -> st.getSex() == 'm');
+        System.out.println("-----------------------------------------------------------------");
+        info.testStudents(studentList, (Student st) -> st.getCourse() < 3);
+        System.out.println("-----------------------------------------------------------------");
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
