@@ -6,9 +6,10 @@ import java.util.function.*;
 public class ClassPredicate {
     public static void main(String[] args) {
 
-    }
+        // creating predicate
+        Predicate<String> checkStringLenght = str -> str.length() < 10;
 
-    public void predicateTest(Predicate<String> t) {
-
+        // calling predicate method
+        System.out.println(checkStringLenght.test("Hello!"));  // true
     }
 }
