@@ -1,9 +1,9 @@
 package StepikJava.ZaurJava.Course1.Lesson25.Homework.Animal;
 
-public class Animal {
+public class Animal1 {
     private int eyes;
 
-    public Animal(int eyes) {
+    public Animal1(int eyes) {
         this.eyes = eyes;
         System.out.println("I'm animal!");
     }

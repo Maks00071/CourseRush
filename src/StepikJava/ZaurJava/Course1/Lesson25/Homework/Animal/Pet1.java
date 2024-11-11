@@ -1,17 +1,17 @@
 package StepikJava.ZaurJava.Course1.Lesson25.Homework.Animal;
 
-public class Pet extends Animal {
+public class Pet1 extends Animal1 {
 
     private String name;
     private int tail = 1;
     private int paw = 4;
 
-    public Pet() {
+    public Pet1() {
         super(2);
         System.out.println("I'm pet!");
     }
 
-    public Pet(String name, int tail, int paw) {
+    public Pet1(String name, int tail, int paw) {
         this();
         this.name = name;
         this.tail = tail;

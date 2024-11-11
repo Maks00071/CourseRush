@@ -1,6 +1,9 @@
 package StepikJava.ZaurJava.Course2.Lesson2.Comparable;
 
-public class Employee {
+import org.jetbrains.annotations.NotNull;
+
+
+public class Employee implements Comparable<Employee> {
 
     private int id;
     private String name;
@@ -34,8 +37,38 @@ public class Employee {
         return surname;
     }
 
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee {" +
+                "id = " + id +
+                ", name = " + name +
+                ", surname = " + surname +
+                ", salary = " + salary + "}";
+    }
 
 
+    @Override
+    public int compareTo(@NotNull Employee anotherEmployee) {
+        if (this.id == anotherEmployee.id) {
+            return 0;
+        } else if (this.id < anotherEmployee.id) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
 }
 
 
