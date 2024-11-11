@@ -1,6 +1,6 @@
 package StepikJava.ZaurJava.Course1.Lesson25.Homework.Animal;
 
-public class Dog extends Pet {
+public class Dog extends StepikJava.ZaurJava.Lesson25.Homework.Animal.Pet {
 
     private String name;
 
