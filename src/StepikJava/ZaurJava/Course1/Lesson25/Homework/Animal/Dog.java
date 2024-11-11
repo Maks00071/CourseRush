@@ -20,4 +20,9 @@ public class Dog extends Pet {
     public void play() {
         System.out.println("Dog plays!");
     }
+
+    @Override
+    public int getPaw() {
+        return 1;
+    }
 }
