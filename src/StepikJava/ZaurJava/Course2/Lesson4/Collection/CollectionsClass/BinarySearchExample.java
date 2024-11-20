@@ -2,6 +2,7 @@ package StepikJava.ZaurJava.Course2.Lesson4.Collection.CollectionsClass;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class BinarySearchExample {
     public static void main(String[] args) {
@@ -25,5 +26,63 @@ public class BinarySearchExample {
 
         int indexElement = Collections.binarySearch(arrayList1, 12);
         System.out.println(indexElement); // 8
+
+        System.out.println("------------------- the next example ------------------------");
+
+        Employee emp1 = new Employee(15, "Ivan", 6542);
+        Employee emp2 = new Employee(123, "Petr", 8542);
+        Employee emp3 = new Employee(15, "Mariya", 5678);
+        Employee emp4 = new Employee(182, "Nikolay", 125);
+        Employee emp5 = new Employee(15, "Sasha", 9874);
+        Employee emp6 = new Employee(250, "Elena", 1579);
+        Employee emp7 = new Employee(100, "Maks", 12345);
+
+        List<Employee> employeeList = new ArrayList<>();
+
+        employeeList.add(emp1);
+        employeeList.add(emp2);
+        employeeList.add(emp3);
+        employeeList.add(emp4);
+        employeeList.add(emp5);
+        employeeList.add(emp6);
+        employeeList.add(emp7);
+
+        System.out.println(employeeList);
+        Collections.sort(employeeList);
+        System.out.println(employeeList);
+
+        System.out.println("------------------- the next example ------------------------");
+
+        int indexEmp1 = Collections.binarySearch(employeeList, new Employee(15, "Sasha", 9874));
+        System.out.println(indexEmp1); // 2
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
