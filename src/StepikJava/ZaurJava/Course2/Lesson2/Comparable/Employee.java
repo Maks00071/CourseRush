@@ -1,7 +1,5 @@
 package StepikJava.ZaurJava.Course2.Lesson2.Comparable;
 
-import org.jetbrains.annotations.NotNull;
-
 
 public class Employee implements Comparable<Employee> {
 
@@ -60,7 +58,7 @@ public class Employee implements Comparable<Employee> {
 
 
     @Override
-    public int compareTo(@NotNull Employee anotherEmployee) {
+    public int compareTo(Employee anotherEmployee) {
         if (this.id == anotherEmployee.id) {
             return 0;
         } else if (this.id < anotherEmployee.id) {

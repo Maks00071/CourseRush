@@ -1,8 +1,6 @@
 package StepikJava.ZaurJava.Course2.Lesson2.Comparator;
 
 
-import org.jetbrains.annotations.NotNull;
-
 public class Student implements Comparable<Student> {
 
     private int id;
@@ -47,7 +45,7 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareTo(@NotNull Student o) {
+    public int compareTo(Student o) {
         if (this.id == o.id) {
             return 0;
         } else if (this.id < o.id ) {
