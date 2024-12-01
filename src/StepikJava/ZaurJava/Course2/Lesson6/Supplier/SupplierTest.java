@@ -2,7 +2,6 @@ package StepikJava.ZaurJava.Course2.Lesson6.Supplier;
 
 import java.util.ArrayList;
 import java.util.function.Supplier;
-import java.util.List;
 
 
 public class SupplierTest {
