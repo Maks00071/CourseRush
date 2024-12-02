@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson7.Streams.FilterMethod;
+package StepikJava.ZaurJava.Course2.Lesson7.Streams.Filter;
 
 import StepikJava.ZaurJava.Course2.Lesson6.Student;
 

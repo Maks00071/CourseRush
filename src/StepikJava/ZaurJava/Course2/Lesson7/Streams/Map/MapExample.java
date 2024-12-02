@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson7.Streams.MapMethod;
+package StepikJava.ZaurJava.Course2.Lesson7.Streams.Map;
 
 import java.util.ArrayList;
 import java.util.Arrays;
