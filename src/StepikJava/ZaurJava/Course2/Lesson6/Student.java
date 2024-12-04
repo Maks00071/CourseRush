@@ -46,6 +46,25 @@ public class Student {
                 '}';
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSex(char sex) {
+        this.sex = sex;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
+    }
+
+    public void setAvgGrade(double avgGrade) {
+        this.avgGrade = avgGrade;
+    }
 }
 
 
