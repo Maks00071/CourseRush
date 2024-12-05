@@ -25,5 +25,6 @@ public class LimitExample {
         Student{name='Ivan', sex=m, age=22, course=3, avgGrade=8.3}
         Student{name='Nikolay', sex=m, age=28, course=2, avgGrade=6.4}
          */
+
     }
 }
