@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson8.MethodsOfMultithreading.Sleep;
+package StepikJava.ZaurJava.Course2.Lesson8.MethodsOfMultithreading.SleepAndJion;
 
 public class MyRunnable1 implements Runnable{
 

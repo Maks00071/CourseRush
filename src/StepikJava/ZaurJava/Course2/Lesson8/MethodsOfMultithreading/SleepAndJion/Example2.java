@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson8.MethodsOfMultithreading.Sleep;
+package StepikJava.ZaurJava.Course2.Lesson8.MethodsOfMultithreading.SleepAndJion;
 
 public class Example2 extends Thread {
 
@@ -14,11 +14,14 @@ public class Example2 extends Thread {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new Thread(new MyRunnable1());
         Example2 thread2 = new Example2();
         thread1.start();
         thread2.start();
+
+        thread1.join();
+        thread2.join();
 
         System.out.println("End!");
     }
