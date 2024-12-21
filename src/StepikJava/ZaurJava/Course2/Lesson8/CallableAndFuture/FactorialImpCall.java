@@ -21,6 +21,7 @@ public class FactorialImpCall implements Callable<Integer> {
 
         for (int i = 1; i <= f; i++) {
             result *= i;
+            Thread.sleep(1000);
         }
 
         return result;
