@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson9.RandomAccessFile;
+package StepikJava.ZaurJava.Course2.Lesson9.IO.RandomAccessFile;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

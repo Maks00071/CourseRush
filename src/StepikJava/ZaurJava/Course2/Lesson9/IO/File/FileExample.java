@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson9.File;
+package StepikJava.ZaurJava.Course2.Lesson9.IO.File;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson9.FileWriter;
+package StepikJava.ZaurJava.Course2.Lesson9.IO.FileWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;

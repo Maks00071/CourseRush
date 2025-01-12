@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson9.DataInputStreamAndDataOutputStream;
+package StepikJava.ZaurJava.Course2.Lesson9.IO.DataInputStreamAndDataOutputStream;
 
 import java.io.*;
 

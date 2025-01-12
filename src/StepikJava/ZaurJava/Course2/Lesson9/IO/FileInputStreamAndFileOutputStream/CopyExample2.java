@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson9.FileInputStreamAndFileOutputStream;
+package StepikJava.ZaurJava.Course2.Lesson9.IO.FileInputStreamAndFileOutputStream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

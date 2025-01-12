@@ -1,4 +1,4 @@
-package StepikJava.ZaurJava.Course2.Lesson9.BufferedReaderAndBufferedWriter;
+package StepikJava.ZaurJava.Course2.Lesson9.IO.BufferedReaderAndBufferedWriter;
 
 import java.io.*;
 

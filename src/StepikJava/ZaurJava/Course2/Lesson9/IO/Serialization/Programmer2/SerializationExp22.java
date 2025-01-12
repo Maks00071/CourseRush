@@ -1,6 +1,6 @@
-package StepikJava.ZaurJava.Course2.Lesson9.Serialization.Programmer2;
+package StepikJava.ZaurJava.Course2.Lesson9.IO.Serialization.Programmer2;
 
-import StepikJava.ZaurJava.Course2.Lesson9.Serialization.Programmer1.Employee;
+import StepikJava.ZaurJava.Course2.Lesson9.IO.Serialization.Programmer1.Employee;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
