@@ -13,6 +13,7 @@ public class ChannelBufferExp {
              FileChannel channel = file.getChannel();
         ) {
 
+            // channel -> buffer
             ByteBuffer buffer = ByteBuffer.allocate(25);
             StringBuilder stringBuilder = new StringBuilder();
 
@@ -32,6 +33,25 @@ public class ChannelBufferExp {
                 byteRead = channel.read(buffer);
             }
             System.out.println(stringBuilder);
+
+            String text = "\nThere are only two ways to live your life." +
+                    " One is as though nothing is a miracle." +
+                    " The other is as though everything is a miracle.\n";
+
+            // buffer -> channel
+
+//            // создадим буфер
+//            ByteBuffer byteBuffer = ByteBuffer.allocate(text.getBytes().length);
+//            // кладем текст в буфер
+//            byteBuffer.put(text.getBytes());
+//            // переворачиваем буфер
+//            byteBuffer.flip();
+//            // записываем информацию в канал
+//            channel.write(byteBuffer);
+
+            // используем метод wrap
+            ByteBuffer byteBuffer2 = ByteBuffer.wrap(text.getBytes());
+            channel.write(byteBuffer2);
 
 
         } catch (FileNotFoundException e) {
