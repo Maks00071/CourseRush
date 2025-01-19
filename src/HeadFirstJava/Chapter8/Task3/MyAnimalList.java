@@ -1,4 +1,4 @@
-package HeadFirstJava.Chapter8;
+package HeadFirstJava.Chapter8.Task3;
 
 public class MyAnimalList {
 

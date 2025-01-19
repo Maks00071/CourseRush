@@ -1,4 +1,4 @@
-package HeadFirstJava.Chapter8;
+package HeadFirstJava.Chapter8.Task3;
 
 public class AnimalTestDrive {
     public static void main(String[] args) {
